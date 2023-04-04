@@ -1,0 +1,38 @@
+.parent{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadContainer{
+    height: 35vh;
+    width: 30vw;
+   
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputButton{
+    color: red;
+    background-color: cadetblue;
+    border-radius: 20px;
+    text-align: center;
+    padding: 200px;
+    margin: 10px;
+}
+
+
+
+
+@media (max-width:800px){
+    #inputButton{
+        padding: 30px;
+        padding-top : 20vh;
+        padding-bottom : 20vh;
+    }
+}
+

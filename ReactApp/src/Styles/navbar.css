@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    height: 5vh;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;    
+    background-color: aqua;
+  }
+
+.nav-link{
+    color: black;
+}

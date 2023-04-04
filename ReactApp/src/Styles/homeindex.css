@@ -1,0 +1,110 @@
+/* Landing Page Component */
+
+
+.parentContainer{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://lh3.googleusercontent.com/cHmYNgsplqrqy4bBNnMApJYpFWodF9x9sAt4WxvFP0wWMtSsxUaMB8s9-WuBjyLSJWq7by2lKgIJIOEXJQi2FRs2GOtss7__H11p7DB-Ns-ykSQ95xdhUHoK6BXWgIZLFABHuK5hIA=w2400");
+}
+    .parentContainer, .logoBox, .HomeImage1, .aboutContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeImage1, .aboutContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.logoBox {
+    
+    background-color: #f5f502;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    height: 10rem;
+    
+    width: auto;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    
+  }
+
+  .intro{
+    padding: 30px;
+  }
+
+  
+ .HomeImage1{
+    flex-wrap: wrap;
+    background-color: rgba(248, 242, 242, 0.829);
+    overflow-x: auto;
+    
+ }
+
+  .img-thumbnail{
+    height: 90vh;
+    flex-basis: 20%;
+  }
+
+  @media (max-width: 1000px) {
+    
+    .about2{
+      display: none;
+    }
+
+  }
+
+  @media (min-width: 500px) {
+    .AboutMeContainer{
+      height: 70vh;
+    }
+  }
+
+    @media (max-width: 991px) {
+      .navContainer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        
+      }
+  }
+
+.aboutContainer{
+  flex-basis: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+
+.mainAbout{
+width: 50vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.AboutMeContainer{
+  background-color: red;
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  
+}
+
+
+.AboutMeContainer p{
+  font-size: x-large;
+}
