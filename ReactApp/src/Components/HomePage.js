@@ -1,57 +1,70 @@
-
 import React from 'react';
-import '../Styles/homeindex.css'; 
-import NavBar from './NavBar';
-
+import '../Styles/homeindex.css';
 
 // Landing Page Title Component
 export const LandingPage = () => {
-    return (
-      <>
-        <div className="parentContainer">
-         
-          <div className='logoBox'>
-            
-            <div className='intro'>Square Pixel</div>
-          </div>
+  return (
+    <>
+      <div className="parentContainer">
+        <div className='logoBox'>
+          <div className='intro'>Square Pixel</div>
         </div>
-      </>
-    );
-  };
+      </div>
+    </>
+  );
+};
 
-export const ImageCards = () => {
-  return(
-  <img
-      src='https://images.unsplash.com/photo-1664229904182-9ea3f8413aa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTV8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80'
+// Home Page exit Image Card
+// Todo: Add rotating Image
+export const ImageCards = (props) => {
+  return (
+    <img
+      src={props.src}
       className='img-thumbnail'
-      alt='...'
-  />
+      alt='Landing Page Image 2'
+    />
   );
 }
 
-
-
 export const AboutMe = () => {
-  
   return (
     <div className='aboutContainer'>
       <div className='mainAbout'>
         <div class='AboutMeContainer' >
-        <h2>Hi there, I'm Robel Tadele</h2>
-          <p>
-            Photography is the only profession where you can shoot people and cut their heads off, 
-            and it's not considered a crime. Just kidding! But seriously, if you want to be a photographer, 
-            you better have a good eye for detail, and a backup plan in case your subjects start chasing you with pitchforks.
-          </p>
+          
 
+          <div class="list-group">
+          <h2>Hi there, I'm <a href='https://www.linkedin.com/in/robeltadele'>Robel Tadele</a></h2>
+          <h5>B.S. Computer Science</h5>
+          
+          <p>
+            I'm a Software Engineer who has a strong passion for developing efficient,
+            high quality Software solutions to impact peoples lives for the good.
+          </p>
+            <a href="https://github.com/RobelTadele?tab=repositories" class="list-group-item list-group-item-action flex-column align-items-start active">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Some of my Skills include</h5>
+                <small>Today</small>
+              </div>
+              <p class="mb-1">Python, Java, C++, HTML, CSS, JavaScript</p>
+            </a>
+            <a href="https://github.com/RobelTadele?tab=repositories" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Frameworks</h5>
+                <small class="text-muted">also Today</small>
+              </div>
+              <p class="mb-1">Spring Boot, React, Bootstrap, Rest API</p>
+            </a>
+            <a href="https://github.com/RobelTadele?tab=repositories" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Other Skills</h5>
+                <small class="text-muted">you guessed it, also today!</small>
+              </div>
+              <p class="mb-1">AWS, Git, Agile, Automation, Data Structures and Algorithms, Networks and Data Communications.</p>
+            </a>
+          </div>
         </div>
-      
-      
-      
-    </div>
+      </div>
     </div>
   )
 }
-
-
-
