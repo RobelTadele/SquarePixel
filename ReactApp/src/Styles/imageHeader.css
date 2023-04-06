@@ -1,6 +1,6 @@
 .headingContainer{
     height: 30vh;
-    padding: 100px;
+    padding: 4vw;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -10,12 +10,12 @@
 
 .heading{
     font-size: xx-large;
+    transition: ease-in 1s;
 }
 
 .description{
     font-size: large; 
 }
-
 
 .imageDiv{
     position: relative;
@@ -32,4 +32,10 @@
   height: 100%;
   object-fit: contain;
 z-index: 1;
+}
+
+@media (max-width: 1000px){
+    .heading{
+        font-size: x-large;
+    }
 }
