@@ -12,7 +12,7 @@ import Uploaditem from './Pages/uploaditem';
 export function App() {
   return (
     <Routes>
-      <Route path='/' element = {<Home />}></Route>
+      <Route path='' element = {<Home />}></Route>
       <Route path='/portfolio' element = {<Portfolio />}></Route>
       <Route path='/Sams-Collection' element = {<SamsCollection />}></Route>
       <Route path='/upload' element = {<Uploads />}></Route>

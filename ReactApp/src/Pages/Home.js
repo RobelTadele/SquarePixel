@@ -1,7 +1,8 @@
 import React from 'react'
 import {Footer} from '../Components/Footer';
-import {AboutMe, LandingPage, ImageCards } from '../Components/HomePage';
+import {AboutMe, LandingPage } from '../Components/HomePage';
 import NavBar from '../Components/NavBar';
+import { Carousel } from '../Components/Carousel';
 
 export const Home = () => {
   return (
@@ -10,9 +11,7 @@ export const Home = () => {
        <LandingPage />
         <AboutMe />
         <div className = "HomeImage1">
-          <ImageCards src = "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0340.jpg"/>
-          <ImageCards src = "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0682.jpg"/>
-          <ImageCards src = "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0457.jpg"/>
+          <Carousel />
         </div>
         <Footer/>
     </div>

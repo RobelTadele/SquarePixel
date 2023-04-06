@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import PhotoAlbum from "react-photo-album";
+import '../Styles/homeindex.css';
 
 //Todo: pass api endpoint as props
 export const PortfolioImageContainer = (props) => {
@@ -28,5 +29,7 @@ export const PortfolioImageContainer = (props) => {
   })
 
   // React photo album lib
-  return <PhotoAlbum layout="columns" photos={imageSrc}/>
+  return <div id="galleryContainer">
+    <PhotoAlbum layout="columns" photos={imageSrc}/>
+  </div>
 }

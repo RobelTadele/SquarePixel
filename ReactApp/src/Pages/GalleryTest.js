@@ -3,6 +3,7 @@ import NavBar from '../Components/NavBar'
 import axios from 'axios';
 import { Footer } from '../Components/Footer';
 import PhotoAlbum from "react-photo-album";
+import '../Styles/homeindex.css';
 
 
 function Uploads() {
@@ -38,7 +39,9 @@ function Uploads() {
   return (
     <>
     <NavBar />
-    <PhotoAlbum layout="columns" photos={photos} />
+    <div id = "galleryContainer">
+      <PhotoAlbum layout="columns" photos={photos} />
+    </div>
     <Footer />
     
     </>

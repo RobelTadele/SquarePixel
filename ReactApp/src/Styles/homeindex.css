@@ -1,4 +1,8 @@
-/* Landing Page Component */
+/* NavBar Styling */
+.navbar{
+  padding: 25px;
+}
+
 
 /* Landing Page Container */
 .parentContainer{
@@ -48,6 +52,8 @@
   .img-thumbnail{
     height: 80vh;
     flex-basis: 20%;
+    border-radius: 30px;
+    transition:ease-in-out .6s;
   }
 
 
@@ -81,7 +87,7 @@ align-items: center;
   flex-direction: column;
   padding: 100px;
   overflow-x: scroll;
-  
+  transition: ease-in-out 0.4s
 }
 
 .AboutMeContainer p{
@@ -101,6 +107,14 @@ a{
   padding-top: 50px ;
 }
 
+#smallImageContainer{
+  width: 80vw;
+  padding: 2px;
+  background-color: #000;
+  display: none;
+  
+}
+
 
  /* Media Queries smaller displays below 1000px*/
   @media (max-width: 1000px) {
@@ -116,7 +130,7 @@ a{
     
     .AboutMeContainer{
       padding: 20px;
-      height: 90vh;
+      height: 70vh;
       width: 90vw;
     }
     .AboutMeContainer p{
@@ -131,7 +145,23 @@ a{
         align-items: center;
         width: 100vw;
       }
-    
+      .img-thumbnail{
+        height: 50vh;
+      }
+
+      .largeImages{
+        display: none
+      }
+      #smallImageContainer{
+        display:block;
+      }
+
   }
 
+  /* GalleryPage styling */
+  #galleryContainer{
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 10px;
+  }
    
