@@ -12,7 +12,7 @@ export const PortfolioImageContainer = (props) => {
   // Fetch images from api, reload when new image added
   useEffect(() =>{ 
     axios
-    .get("http://ec2-13-58-211-250.us-east-2.compute.amazonaws.com:8081/api/v1/images/")
+    .get("http://ec2-18-219-215-231.us-east-2.compute.amazonaws.com:8081/api/v1/images/")
     .then(response =>setimageObjects(response.data))
     .catch(err=>console.log(err))
   }, [imageObjects])
@@ -30,6 +30,6 @@ export const PortfolioImageContainer = (props) => {
 
   // React photo album lib
   return <div id="galleryContainer">
-    <PhotoAlbum layout="columns" photos={imageSrc}/>
+    <PhotoAlbum columns = {2} layout="columns" photos={imageSrc}/>
   </div>
 }

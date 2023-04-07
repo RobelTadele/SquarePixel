@@ -1,14 +1,45 @@
-import React from 'react'
+import React, {useState} from 'react'
 import NavBar from '../Components/NavBar'
-import Uploader from '../Components/uploader'
+import { Gallery } from "react-grid-gallery";
+
 
 function uploaditem() {
+  const images = [
+    {
+       src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+       width: 600,
+       height: 174,
+       isSelected: false,
+       caption: "After Rain (Jeshu John - designerspics.com)",
+       
+    },
+    {
+       src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+       width: 320,
+       height: 212,
+       tags: [
+          { value: "Ocean", title: "Ocean" },
+          { value: "People", title: "People" },
+       ],
+       alt: "Boats (Jeshu John - designerspics.com)",
+    },
+  
+    {
+       src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+       width: 320,
+       height: 212,
+    },
+ ];
+
+ 
+
   return (
     <>
       <NavBar />
-      
+    
+      <Gallery images={images} />
       {/* Uploads items to s3, uploads metadata to squarepixelAPI */}
-      <Uploader />
+      
     </>
   )
 }
