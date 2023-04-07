@@ -31,12 +31,8 @@ export const AboutMe = () => {
     <div className='aboutContainer'>
       <div className='mainAbout'>
         <div class='AboutMeContainer' >
-          
-
           <div class="list-group">
           <h2>Hi there, I'm <a href='https://www.linkedin.com/in/robeltadele'>Robel Tadele</a></h2>
-          
-          
           <p>
             I'm a Software Engineer who has a strong passion for developing efficient,
             high quality Software solutions impacting peoples lives for the good.

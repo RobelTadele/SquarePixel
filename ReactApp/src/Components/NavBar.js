@@ -1,7 +1,6 @@
 import React from 'react'
 import '../Styles/homeindex.css';
 
-
 function NavBar() {
   return (
     <>

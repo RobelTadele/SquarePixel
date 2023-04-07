@@ -7,14 +7,12 @@ export const ImageHeader = (props) => {
     //const randomURL = backgroundImage[Math.floor(Math.random()*backgroundImage.length)]
     // const divStyle = {backgroundImage : `url(${randomURL})`}
 
-    
   return (
    <>
     <div class='headingContainer' >
         <div class='heading'>{props.text}</div>
         <div class='description'>{props.description}</div>
     </div>
-  
    </>
   )
 }

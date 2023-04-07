@@ -44,11 +44,6 @@ export const Carousel = () => {
             <ImageCards src={images[2]}/>
             <ImageCards src={images[3]}/>
           </div>
-
-       
         </>
-
-
-
     )
 }

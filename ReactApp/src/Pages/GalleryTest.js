@@ -21,7 +21,6 @@ function Uploads() {
   const photos = [];
 
   data.forEach((data) => {
-
     const urls = data.download_url
     const h = data.height
     const w = data.width
@@ -31,9 +30,7 @@ function Uploads() {
       height:h,
       width:w
    }
-
    photos.push(objects)
-
   });
 
   return (

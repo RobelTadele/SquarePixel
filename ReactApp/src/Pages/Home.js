@@ -15,7 +15,6 @@ export const Home = () => {
         </div>
         <Footer/>
     </div>
-    
   )
 }
 

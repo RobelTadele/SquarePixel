@@ -3,8 +3,6 @@ import axios from 'axios';
 import PhotoAlbum from "react-photo-album";
 import '../Styles/homeindex.css';
 
-
-//Todo: pass api endpoint as props
 export const PortfolioImageContainer = (props) => {
   const [imageObjects, setimageObjects] = useState([])
   // Fetch images from api, reload when new image added
@@ -29,16 +27,11 @@ export const PortfolioImageContainer = (props) => {
   // React photo album lib
   return <>
     <div id="galleryContainer">
-      {/* columns = {1} */}
       <PhotoAlbum layout="rows" photos={imageSrc}/>
     </div>
 
     <div id="galleryContainerMobile">
       <PhotoAlbum columns={1} layout="columns" photos={imageSrc}/>
     </div>
-  
-  
-  
-  
   </>
 }

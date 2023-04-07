@@ -4,7 +4,6 @@ import NavBar from '../Components/NavBar'
 import {PortfolioImageContainer} from '../Components/PortfolioImageContainer'
 import {ImageHeader} from '../Components/imageHeaders'
 
-
 export const SamsCollection = () => {
   const pageVariables = {
     description:"Description",
@@ -24,5 +23,4 @@ export const SamsCollection = () => {
     </>
   )
 }
-
 export default SamsCollection
