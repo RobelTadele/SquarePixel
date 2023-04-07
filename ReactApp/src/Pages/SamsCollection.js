@@ -19,7 +19,7 @@ export const SamsCollection = () => {
         text = {pageVariables.text}
         backgroundImage={pageVariables.backgroundImage}
      />
-    <PortfolioImageContainer imageAPIsrc={process.env.REACT_APP_SamsCollection_api}/>
+    <PortfolioImageContainer src={Samsportfolio}/>
     <Footer />
     </>
   )

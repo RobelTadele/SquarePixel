@@ -115,6 +115,16 @@ a{
   
 }
 
+/* GalleryPage styling for small and large screens */
+#galleryContainer{
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#galleryContainerMobile{
+  display: none;
+}
 
  /* Media Queries smaller displays below 1000px*/
   @media (max-width: 1000px) {
@@ -158,13 +168,20 @@ a{
       .navbar{
         padding: 15px;
       }
+      
+      #galleryContainerMobile{
+        background-color: #ffffff;
+        padding: 3px;
+        margin-top: 10px;
+        display: block;
+        
+      }
+
+      #galleryContainer{
+        display: none;
+      }
 
   }
 
-  /* GalleryPage styling */
-  #galleryContainer{
-    background-color: #000000;
-    padding: 20px;
-    margin-top: 10px;
-  }
+  
    

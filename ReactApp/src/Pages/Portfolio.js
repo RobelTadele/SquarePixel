@@ -3,6 +3,7 @@ import NavBar from '../Components/NavBar'
 import { Footer } from '../Components/Footer';
 import {ImageHeader} from '../Components/imageHeaders'
 import { PortfolioImageContainer } from '../Components/PortfolioImageContainer';
+import API_endpoint from '../Components/APIendpoints';
 
 // Renders entire Portfolio Page using components
 export const Portfolio = () => {
@@ -19,7 +20,7 @@ export const Portfolio = () => {
         text = {pageVariables.text}
         backgroundImage={pageVariables.backgroundImage}
      />
-    <PortfolioImageContainer imageAPIsrc={process.env.REACT_APP_PORTFOLIO_API}/>
+    <PortfolioImageContainer src={API_endpoint.portfolio}/>
     <Footer />
     </>
   )
