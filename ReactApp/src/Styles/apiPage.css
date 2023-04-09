@@ -1,0 +1,60 @@
+.parContainer{
+    height: 100vh;
+    width: auto;    
+    display: flex;
+}
+
+.designContainer{
+    width: 50vw;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.docContainer{
+    width: 50vw;
+    background-color: rgba(220, 209, 209, 0.669);
+    padding: 20px;
+}
+
+.docContainer h1{ 
+    padding-top: 150px;
+    text-align: center;
+}
+
+.docContainer p{
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+img{
+    width: 40vw;
+}
+
+
+.apiIntro, .apiEndpoints{
+    padding: 40px;
+}
+
+
+/* Removes design element when screen shrinks */
+@media (max-width: 1500px) {
+    .designContainer{
+        display: none;
+    }
+    .docContainer{
+        width: 100vw;
+    }
+    .sideImage{
+        display: none;
+    }
+}
+
+
+
+
+

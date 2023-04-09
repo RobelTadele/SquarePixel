@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
 import { ImageCards } from './HomePage'
 
 export const Carousel = () => {
     const images = {
         1: "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0340.jpg",
-        2: "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0682.jpg",
-        3: "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0457.jpg"
+        2: "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0340.jpg",
+        3: "https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/DSC_0340.jpg"
     }
 
     return (

@@ -21,11 +21,12 @@ function NavBar() {
               <a class="nav-link" href="/Sams-Collection">Sam's Collection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/upload">Test Page</a>
+              <a class="nav-link" href="/upload">Upload</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/uploaditem">Upload Image</a>
+              <a class="nav-link" href="/api">API</a>
             </li>
+            
           </ul>
         </div>
       </nav>

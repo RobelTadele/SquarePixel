@@ -20,7 +20,8 @@ export const Portfolio = () => {
         text = {pageVariables.text}
         backgroundImage={pageVariables.backgroundImage}
      />
-    <PortfolioImageContainer src={API_endpoint.portfolio}/>
+     {/* limit -1 to fetch all images */}
+    <PortfolioImageContainer src={API_endpoint.portfolio} limit={-1}/>
     <Footer />
     </>
   )
