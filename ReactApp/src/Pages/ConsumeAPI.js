@@ -2,11 +2,13 @@ import React from 'react'
 import '../Styles/apiPage.css'
 import { ImageCards } from '../Components/HomePage'
 import ApidocComponent from '../Components/ApidocComponent'
+import NavBar from '../Components/NavBar';
 
 // API Resources Page 
 const ConsumeAPI = () => {
   return (
     <>
+    <NavBar />
     <div className='parContainer'>
       
         <div className="designContainer">

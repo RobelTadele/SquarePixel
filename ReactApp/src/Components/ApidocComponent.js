@@ -23,7 +23,7 @@ const ApidocComponent = () => {
     <tr>
       <th scope="row">2</th>
       <td>GET</td>
-      <td>{API_endpoint.Samsportfolio}</td>
+      <td>{API_endpoint.SamsCollection}</td>
       <td>Response</td>
     </tr>
     <tr>
