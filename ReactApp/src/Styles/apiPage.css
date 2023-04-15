@@ -1,6 +1,6 @@
 .parContainer{
-    height: 100vh;
-    width: auto;    
+  
+  
     display: flex;
 }
 
@@ -15,8 +15,8 @@
 
 
 .docContainer{
-    width: 50vw;
-    background-color: rgba(220, 209, 209, 0.669);
+    
+   
     padding: 20px;
 }
 
