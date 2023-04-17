@@ -1,10 +1,17 @@
 import React from 'react'
 import { AuthenticationComponents } from '../Components/authenticationComponents'
+import NavBar from '../Components/NavBar'
 
 const AuthenticationPage = () => {
   return (
     // <AuthenticationComponents />
-    <div>Keep Posted <br/>User Profiles Coming soon</div>
+    <>
+    <NavBar />
+    <div>
+      Uploads Coming Soon!
+    </div>
+    </>
+    
   )
 }
 

@@ -10,8 +10,8 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-image: url("https://squarepixelbucket.s3.us-east-2.amazonaws.com/MainPortfolio/Snapseed%287%29.nef");
+    background-image: url("https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/20210923_195150000_iOS.jpg");
+    background-size: cover;
 }
 
 .parentContainer, .logoBox, .intro, .HomeImage1, .aboutContainer{
@@ -141,6 +141,9 @@ a{
 
  /* Media Queries smaller displays below 1000px*/
   @media (max-width: 1000px) {
+    .parentContainer{
+      background-image: url("https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/DSC_0214+%282%29.jpg");
+    }
     .intro{
       font-size: 25px;
       height:10vh;
