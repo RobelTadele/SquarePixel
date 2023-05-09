@@ -4,9 +4,9 @@ import { ImageCards } from './HomePage'
 
 export const Carousel = () => {
     const images = {
-        1: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0215.jpg",
+        1: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0544.jpg",
         2: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0455.jpg",
-        3: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0517.jpg"
+        3: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0078.jpg"
     }
 
     return (

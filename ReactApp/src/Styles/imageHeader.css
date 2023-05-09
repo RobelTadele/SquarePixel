@@ -1,3 +1,6 @@
+#root{
+    background-color: #eeeeee;
+}
 .headingContainer{
     height: 30vh;
     padding: 4vw;
@@ -5,7 +8,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column; 
-    background-color: rgb(228, 221, 211);
+    background-color: #bfb8ad;
 }
 
 .heading{
