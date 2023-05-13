@@ -1,48 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import '../Styles/dropitem.css'
 import NavBar from '../Components/NavBar'
-import 'react-dropzone-uploader/dist/styles.css'
-import Dropzone from 'react-dropzone-uploader'
-import axios from 'axios';
-import API_endpoint from '../Components/APIendpoints'
 
-
-const AuthenticationPage = () => {
-  const [presigned, setpresigned] = useState(null)
-  const [selectedFile, setSelectedFile] = useState(null);
-
-  // Store Selected images
-  const handleImageUpload = (event) => {
-    setSelectedFile(event.target.files[0]);
-  };
-
-  // Fetch PresignedURL from API Gateway
-  const fetchPresignedURL = async (event) => {
-    event.preventDefault();
-    try {
-      const res = await axios.get(API_endpoint.presignedURLTrigger);
-      setpresigned(res.data.body)
-      const formData = new FormData();
-      
-      formData.append("image", selectedFile);
-      const submitted = await axios.post(presigned.URL, formData).then((response) => {
-        console.log(response);
-      });
-
-    } catch (err) {
-      console.log(err, "Failed to Upload Image")
-    }
-  };
-
-
+function UploadPage() {
   return (
     <>
-      <NavBar />
-      <form>
-        <input type="file" onChange={handleImageUpload} />
-        <button type="submit" onClick={fetchPresignedURL}>Submit</button>
-      </form>
-    </>
+    <NavBar />
+    <div className='parentContainer'>
+      <h2>Welcome back, User Uploads coming soon</h2>
+      <a href='https://sqpxauthentication.auth.us-east-1.amazoncognito.com/login?client_id=47n3nt2if93bn844quiekv1b5v&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fupload'>SignOut</a>
+      
+      </div>
+      </>
   )
 }
 
-export default AuthenticationPage
+export default UploadPage

@@ -3,8 +3,10 @@ import {Routes, Route} from 'react-router-dom'
 import {Home} from './Pages/Home'
 import Portfolio from './Pages/Portfolio';
 import SamsCollection from './Pages/SamsCollection';
-import UploadPage from './Pages/UploadPage'
 import ConsumeAPI from './Pages/ConsumeAPI';
+import UploadPage from './Pages/UploadPage'
+
+
 
 export function App() {
   return (

@@ -21,7 +21,7 @@ function NavBar() {
               <a class="nav-link" href="/Sams-Collection">Sam's Collection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/upload">Upload</a>
+              <a class="nav-link" href="https://sqpxauthentication.auth.us-east-1.amazoncognito.com/login?client_id=47n3nt2if93bn844quiekv1b5v&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fupload">Upload</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/api">API</a>
