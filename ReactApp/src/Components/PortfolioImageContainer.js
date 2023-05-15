@@ -2,6 +2,8 @@ import React from 'react'
 import '../Styles/homeindex.css';
 import { ApiFetch } from './ApiFetch';
 import { LightboxComp } from './LightboxComp';
+
+
 export const PortfolioImageContainer = (src, limit) => {
   const imageSrc = ApiFetch(src, limit)
   
@@ -19,7 +21,6 @@ export const PortfolioImageContainer = (src, limit) => {
    <div id="galleryContainerTablet">
     <LightboxComp imageSrc={imageSrc} layout={"columns"} columns={2}/>
    </div>
-
   </>
 }
 
