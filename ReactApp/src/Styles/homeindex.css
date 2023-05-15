@@ -125,23 +125,36 @@ a{
   
 }
 
-/* GalleryPage styling for small and large screens */
-#galleryContainer{
+/* Gallery Page styling for small and large screens */
+#galleryContainer, #galleryContainerMobile, #galleryContainerTablet{
   background-color: #000000;
-  padding: 20px;
-  margin-top: 10px;
   min-height: 50vh;
 }
 
-#galleryContainerMobile{
+#galleryContainerMobile, #galleryContainerTablet{
   display: none;
 }
 
+#galleryContainer{
+  padding: 20px;
+  margin-top: 10px;
+}
 
+/* 1000px to 2000px Image Container */
+@media (min-width: 1000px) and (max-width: 2000px) {
+  #galleryContainerTablet{
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+  }
+  #galleryContainer, #galleryContainerMobile{
+    display: none;
+  }
 
+}
 
- /* Media Queries smaller displays below 1000px*/
-  @media (max-width: 1000px) {
+ /* 1000px and below Image Container*/
+  @media (min-width: 0px) and (max-width: 999px) {
     .parentContainer{
       background-image: url("https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/DSC_0214+%282%29.jpg");
     }
@@ -192,11 +205,9 @@ a{
         margin-top: 10px;
         display: block;
         min-height: 50vh;
-        background-color: #000000;
-        
       }
 
-      #galleryContainer{
+      #galleryContainer, #galleryContainerTablet{
         display: none;
       }
   }

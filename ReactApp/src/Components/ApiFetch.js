@@ -17,11 +17,12 @@ export const ApiFetch = ({src, limit}) => {
 
     const imageSrc = []
     imageObjects.map(item=>{
+        
     // converting objects to photoalbum specified objects
     const value = {
         src : item.imageURL, 
-        width: 400, 
-        height:600
+        width: item.width, 
+        height:item.height
     }
     imageSrc.push(value)
 })
