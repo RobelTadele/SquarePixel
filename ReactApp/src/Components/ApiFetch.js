@@ -4,7 +4,7 @@ import axios from 'axios';
 // Fetches API Images with src and size limit
 // default is all pass limit to get n number of items
 export const ApiFetch = ({src, limit}) => {
-    const [imageObjects, setimageObjects] = useState([])
+    const [image, setimageObjects] = useState([])
 
     if (limit != -1) src = src + `/limit?${limit}`
     
@@ -15,18 +15,20 @@ export const ApiFetch = ({src, limit}) => {
         .catch(err=>console.log(err))
     }, [])
 
-    const imageSrc = []
-    imageObjects.map(item=>{
+    const imageObj = []
+    image.map(item=>{
         
     // converting objects to photoalbum specified objects
     const value = {
         src : item.imageURL, 
         width: item.width, 
-        height:item.height
+        height:item.height,
+        tags: item.tags
+        
     }
-    imageSrc.push(value)
+    imageObj.push(value)
 })
-   return imageSrc
+   return imageObj
 }
 
 

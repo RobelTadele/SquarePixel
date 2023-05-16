@@ -5,23 +5,22 @@ import { LightboxComp } from './LightboxComp';
 
 
 export const PortfolioImageContainer = (src, limit) => {
-  const imageSrc = ApiFetch(src, limit)
+  const imageObj = ApiFetch(src, limit)
+  
   
     // React photo album views based on screen size
   return <>
    
    <div id="galleryContainer">
-    <LightboxComp imageSrc={imageSrc} layout={"rows"}/>
+    <LightboxComp imageObj={imageObj} layout={"rows"}/>
    </div>
 
    <div id="galleryContainerMobile">
-    <LightboxComp imageSrc={imageSrc} layout={"columns"} columns={1}/>
+    <LightboxComp imageObj={imageObj} layout={"columns"} columns={1}/>
    </div>
 
    <div id="galleryContainerTablet">
-    <LightboxComp imageSrc={imageSrc} layout={"columns"} columns={2}/>
+    <LightboxComp imageObj={imageObj} layout={"columns"} columns={2}/>
    </div>
   </>
 }
-
-
