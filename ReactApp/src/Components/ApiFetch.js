@@ -13,7 +13,7 @@ export const ApiFetch = ({src, limit}) => {
         .get(src + "")
         .then(response =>setimageObjects(response.data))
         .catch(err=>console.log(err))
-    }, [])
+    }, [image])
 
     const imageObj = []
     image.map(item=>{

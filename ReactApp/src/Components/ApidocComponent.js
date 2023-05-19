@@ -4,9 +4,6 @@ import axios from 'axios';
 
 const ApidocComponent = () => {
 
-  
-  const getImages = "https://gist.github.com/RobelTadele/f4e8d5e96943ae4c85a6e751f3243165.js" 
-
   return (
     <div>
         <table class="table">
@@ -23,7 +20,7 @@ const ApidocComponent = () => {
       <th scope="row">1. Get all Images</th>
       <td>GET</td>
       <td>{API_endpoint.portfolio}</td>
-      <td>Re</td>
+      <td>Response</td>
     </tr>
     <tr>
       <th scope="row">2. Get all Images from Sams Collection</th>
