@@ -1,52 +1,16 @@
 import React from 'react'
-import API_endpoint from './APIendpoints'
-import axios from 'axios';
+import Frame from 'react-frame-component';
 
 const ApidocComponent = () => {
 
-  
-  const getImages = "https://gist.github.com/RobelTadele/f4e8d5e96943ae4c85a6e751f3243165.js" 
+
+  const getImages = "https://gist.github.com/RobelTadele/f4e8d5e96943ae4c85a6e751f3243165.js"
 
   return (
-    <div>
-        <table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Description</th>
-      <th scope="col">Method</th>
-      <th scope="col">Path</th>
-      <th scope="col">Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1. Get all Images</th>
-      <td>GET</td>
-      <td>{API_endpoint.portfolio}</td>
-      <td>Re</td>
-    </tr>
-    <tr>
-      <th scope="row">2. Get all Images from Sams Collection</th>
-      <td>GET</td>
-      <td>{API_endpoint.SamsCollection}</td>
-      <td>Response</td>
-    </tr>
-    <tr>
-      <th scope="row">3. Get a set of n images</th>
-      <td>GET</td>
-      <td>{API_endpoint.limitedPortfolio}/n</td>
-      <td>Response</td>
-    </tr>
-    <tr>
-      <th scope="row">4. Contribute to Square Pixel</th>
-      <td>POST</td>
-      <td>{API_endpoint.uploads}</td>
-      <td>Coming Soon</td>
-    </tr>
-   
-  </tbody>
-</table>
-    </div>
+    <>
+    
+
+    </>
   )
 }
 
