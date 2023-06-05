@@ -1,6 +1,7 @@
 
-const APIURL = "http://ec2-18-204-208-65.compute-1.amazonaws.com:8081/api/v1/images"
-
+// EC2 Instance and default port and path for API
+const EC2Instance = "http://ec2-54-227-124-13.compute-1.amazonaws.com"
+const APIURL = EC2Instance + ":8081/api/v1/images"
 
 const API_endpoint = {
     portfolio : APIURL,

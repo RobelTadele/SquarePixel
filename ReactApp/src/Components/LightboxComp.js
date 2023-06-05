@@ -18,7 +18,7 @@ export const LightboxComp = (props) => {
     imageData.map((data)=>{
         const val = {
             src: `${data.src}`,
-            title: 'Coming Soon',
+            title: '',
             description: `${data.tags}`
         }
         displayInfo.push(val)
