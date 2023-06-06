@@ -1,12 +1,17 @@
 import React from 'react'
 import '../Styles/homeindex.css'
 import { ImageCards } from './HomePage'
+import { ApiFetch } from './ApiFetch'
+import API_endpoint from './APIendpoints'
 
 export const Carousel = () => {
+    
+    const homeImgs = ApiFetch(API_endpoint.portfolio, 3)
+    
     const images = {
-        1: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0544.jpg",
-        2: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0455.jpg",
-        3: "https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/DSC_0078.jpg"
+        1: "https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/DSC_0850.jpg",
+        2: "https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/IMG_0887.jpg",
+        3: "https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/Snapseed-53.jpg"
     }
 
     return (

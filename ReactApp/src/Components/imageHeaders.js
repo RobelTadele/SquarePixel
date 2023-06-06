@@ -1,12 +1,10 @@
 import React from 'react'
 import '../Styles/imageHeader.css';
 
+// Information Banner Card 
+// Props.text -> Header Text to display
+// Props.description -> Header Description 
 export const ImageHeader = (props) => {
-   
-    //const backgroundImage = props.bannerImage.map(img => img.src)
-    //const randomURL = backgroundImage[Math.floor(Math.random()*backgroundImage.length)]
-    // const divStyle = {backgroundImage : `url(${randomURL})`}
-
   return (
    <>
     <div class='headingContainer' >

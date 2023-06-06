@@ -3,14 +3,13 @@
   padding: 25px;
 }
 
-
 /* Landing Page Container */
 .parentContainer{
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/20210923_195150000_iOS.jpg");
+    background-image: url("https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/20210311_160719000_iOS.jpg");
     background-size: cover;
 }
 
@@ -127,7 +126,7 @@ a{
 
 /* Gallery Page styling for small and large screens */
 #galleryContainer, #galleryContainerMobile, #galleryContainerTablet{
-  background-color: #000000;
+  background-color: #ffffff;
   min-height: 50vh;
 }
 
@@ -140,8 +139,22 @@ a{
   margin-top: 10px;
 }
 
-/* 1000px to 2000px Image Container */
-@media (min-width: 1000px) and (max-width: 2000px) {
+
+
+/* Screen sizes above 1501px resort to 6 columns */
+@media (min-width: 1201px) {
+  .parentGalleryContiner{
+    padding: 0px 3em 0px 3em;
+  }
+  #galleryContainerMax{
+    display: block;
+  }
+  #galleryContainer{
+    display: none;
+  }
+}
+/* 1000px to 1500px Image Container */
+@media (min-width: 601px) and (max-width: 1200px) {
   #galleryContainerTablet{
     padding: 10px;
     margin-top: 10px;
@@ -150,11 +163,21 @@ a{
   #galleryContainer, #galleryContainerMobile{
     display: none;
   }
-
 }
 
- /* 1000px and below Image Container*/
-  @media (min-width: 0px) and (max-width: 999px) {
+@media (min-width: 0px) and (max-width: 1000px){
+  .largeImages{
+    display: none
+  }
+
+  #smallImageContainer{
+    display:block;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1000px){
+
+ /* 1000px and below Image Container*/   
     .parentContainer{
       background-image: url("https://squarepixelbucket1.s3.us-east-1.amazonaws.com/MainPortfolio/DSC_0214+%282%29.jpg");
     }
@@ -187,13 +210,6 @@ a{
       }
       .img-thumbnail{
         height: 50vh;
-      }
-
-      .largeImages{
-        display: none
-      }
-      #smallImageContainer{
-        display:block;
       }
       .navbar{
         padding: 15px;

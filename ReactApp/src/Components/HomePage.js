@@ -32,11 +32,11 @@ export const AboutMe = () => {
       <div className='mainAbout'>
         <div class='AboutMeContainer' >
           <div class="list-group">
-          <h2>Hi there, I'm <a href='https://www.linkedin.com/in/robeltadele'>Robel Tadele</a></h2>
-          <p>
-            I'm a Software Engineer who has a strong passion for developing efficient,
-            high quality Software solutions impacting peoples lives for the good.
-          </p>
+            <h2>Hi there, I'm <a href='https://www.linkedin.com/in/robeltadele'>Robel Tadele</a></h2>
+            <p>
+              I'm a Software Engineer who has a strong passion for developing efficient,
+              high quality Software solutions impacting peoples lives for the good.
+            </p>
             <a href="https://github.com/RobelTadele?tab=repositories" class="list-group-item list-group-item-action flex-column align-items-start active">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Some of my Skills include</h5>

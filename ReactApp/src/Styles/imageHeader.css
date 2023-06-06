@@ -2,15 +2,23 @@
     background-color: #eeeeee;
 }
 .headingContainer{
-    height: 30vh;
+    height: 40vh;
     padding: 4vw;
-    margin-bottom: 50px;
+    margin-bottom: 1vh;
     display: flex;
     justify-content: center;
     flex-direction: column; 
-    background-color: #bfb8ad;
+    background-image: url("https://squarepixelbucket1.s3.amazonaws.com/MainPortfolio/IMG_0686.jpg");
+    background-position: -10px;
+    background-size: cover;      
+    background-position: center;
+
 }
 
+
+.heading, .description{
+    color: white;
+}
 .heading{
     font-size: xx-large;
     transition: ease-in 1s;
@@ -23,7 +31,7 @@
 .imageDiv{
     position: relative;
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     border: 1px solid black;
 }
 
@@ -37,8 +45,9 @@
 z-index: 1;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1201px){
     .heading{
         font-size: x-large;
     }
+    
 }
