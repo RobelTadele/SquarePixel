@@ -15,14 +15,16 @@ export const PortfolioImageContainer = (src, limit) => {
       <LightboxComp imageObj={imageObj} layout={"rows"}/>
     </div>
 
+    {/* 0-600px */}
     <div id="galleryContainerMobile">
       <LightboxComp imageObj={imageObj} layout={"columns"} columns={1}/>
     </div>
 
+    {/* 601-1200px */}     
     <div id="galleryContainerTablet">
       <LightboxComp imageObj={imageObj} layout={"columns"} columns={2}/>
     </div>
-
+    {/* >= 1200px */}
     <div id="galleryContainerMax">
       <LightboxComp imageObj={imageObj} layout={"columns"} columns={7}/>
     </div>
